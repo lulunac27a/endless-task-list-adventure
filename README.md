@@ -1,6 +1,6 @@
 # Endless Task List Adventure
 
-This app is a task list with endless adventure. It supports gamification elements like levels and experience points (XP).
+This app is a task list with endless adventure. It supports gamification elements like levels and experience points (XP). It uses Ruby on Rails for this project.
 
 ### Getting Started
 
