@@ -1,15 +1,15 @@
 class TasksController < ApplicationController
   def index
     @tasks = Task.all
-    @user = User.find_by(name: 'Default User')
+    @user = User.find_by(name: "Default User")
   end
 
   def show
     @task = Task.find(params[:id])
   end
-  
+
   def create
-    @user = User.find_by(name: 'Default User')
+    @user = User.find_by(name: "Default User")
     @task = @user.tasks.new(task_params)
     if @task.save
       redirect_to @task
