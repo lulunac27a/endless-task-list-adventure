@@ -1,4 +1,5 @@
 <h1>New Task</h1>
+
 <%= form_with(model: Task.new, local: true) do |form| %>
   <div class="field">
     <%= form.label :name %>
@@ -6,7 +7,7 @@
     <%= form.label :due_date %>
     <%= form.datetime_select :due_date %>
     <%= form.label :repeat_frequency %>
-    <%= form.select :repeat_frequency, ["daily", "weekly", "monthly", "yearly"] %>
+    <%= form.select :repeat_frequency, %w[daily weekly monthly yearly] %>
     <%= form.label :repeat_interval %>
     <%= form.number_field :repeat_interval %>
   </div>

@@ -5,7 +5,7 @@
     <%= form.label :due_date %>
     <%= form.datetime_select :due_date %>
     <%= form.label :repeat_frequency %>
-    <%= form.select :repeat_frequency, ["daily", "weekly", "monthly", "yearly"] %>
+    <%= form.select :repeat_frequency, %w[daily weekly monthly yearly] %>
     <%= form.label :repeat_interval %>
     <%= form.number_field :repeat_interval %>
   </div>
