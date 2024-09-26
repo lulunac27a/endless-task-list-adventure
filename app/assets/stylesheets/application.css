@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+* {
+    font-family: sans-serif;
+}
+
+table, td{
+    border: 1px solid black;
+    width: 20vw;
+    text-align: center;
+    table-layout: fixed;
+}
