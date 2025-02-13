@@ -1,7 +1,7 @@
 class TasksController < ApplicationController
   def index
     @tasks = Task.all
-    @user = User.find_by(name: "Default User")
+    @user = User.find_by(name: "Default User") || User.create(name: "Default User", level: 1, xp: 0, xp_required: 1, total_xp: 0)
   end
 
   def show
