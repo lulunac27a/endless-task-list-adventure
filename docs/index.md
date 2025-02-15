@@ -10,4 +10,4 @@ cd endless-task-list-adventure
 rails server
 ```
 
-Open localhost:3000 on your web server.
+Make sure Rails is installed and then open localhost:3000 on your web server.
