@@ -1,4 +1,7 @@
 source "https://rubygems.org"
+gem 'erb_lint', require: false
+gem 'rubocop', require: false
+gem 'rubocop-rails', require: false
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.2.2"
@@ -60,3 +63,5 @@ group :test do
 end
 
 gem "rubocop-erb", "~> 0.5.5"
+
+gem "erb-formatter", "~> 0.7.3"
