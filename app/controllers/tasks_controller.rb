@@ -26,7 +26,7 @@ class TasksController < ApplicationController
   def complete
     @task = Task.find(params.fetch(:id))
     @task.complete
-    redirect_to task_path
+    redirect_to tasks_path
   end
 
   def update
