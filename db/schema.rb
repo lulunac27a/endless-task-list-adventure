@@ -11,15 +11,6 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema[7.2].define(version: 2024_09_18_030854) do
-  create_table "levels", force: :cascade do |t|
-    t.integer "level"
-    t.float "xp"
-    t.float "xp_required"
-    t.float "total_xp"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "tasks", force: :cascade do |t|
     t.string "name"
     t.datetime "due_date"
@@ -27,7 +18,6 @@ ActiveRecord::Schema[7.2].define(version: 2024_09_18_030854) do
     t.string "repeat_frequency"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "title"
     t.integer "user_id"
   end
 

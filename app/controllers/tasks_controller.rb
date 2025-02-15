@@ -4,6 +4,10 @@ class TasksController < ApplicationController
     @user = User.find_by(name: "Default User") || User.create(name: "Default User", level: 1, xp: 0, xp_required: 1, total_xp: 0)
   end
 
+  def new
+    @task = Task.new
+  end
+
   def show
     @task = Task.find(params.fetch(:id))
   end
@@ -38,16 +42,16 @@ class TasksController < ApplicationController
     end
   end
 
-  private
-
-  def task_params
-    params.require(:task).permit(:name, :due_date, :repeat_frequency, :repeat_interval, :user_id)
-  end
-
   def destroy
     @task = Task.find(params.fetch(:id))
     if @task.destroy
       redirect_to tasks_path
     end
+  end
+
+  private
+
+  def task_params
+    params.require(:task).permit(:name, :due_date, :repeat_frequency, :repeat_interval, :user_id)
   end
 end
