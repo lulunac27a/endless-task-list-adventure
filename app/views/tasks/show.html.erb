@@ -4,6 +4,6 @@
 <p><strong>Repeat Frequency:</strong> <%= @task.repeat_frequency %></p>
 <p><strong>Repeat Interval:</strong> <%= @task.repeat_interval %></p>
 
-<%= link_to "Complete Task", complete_task_path(@task), method: :patch %>
-<%= link_to "Edit Task", edit_task_path(@task) %>
-<%= link_to "Back to Tasks", tasks_path %>
+<%= button_to "Complete Task", complete_task_path(@task), method: :patch %>
+<%= button_to "Edit Task", edit_task_path(@task) %>
+<%= button_to "Back to Tasks", tasks_path %>
