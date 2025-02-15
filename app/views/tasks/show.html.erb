@@ -9,4 +9,4 @@
 
 <%= button_to "Complete Task", complete_task_path(@task), method: :patch %>
 <%= button_to "Edit Task", edit_task_path(@task) %>
-<%= button_to "Back to Tasks", tasks_path %>
+<%= button_to "Back to Tasks", tasks_path, method: :get %>
