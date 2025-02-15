@@ -29,6 +29,15 @@ class TasksController < ApplicationController
     redirect_to task_path
   end
 
+  def update
+    @task = Task.find(params.fetch(:id))
+    if @task.update(task_params)
+      redirect_to @task
+    else
+      render :edit
+    end
+  end
+
   private
 
   def task_params
