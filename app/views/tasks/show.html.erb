@@ -1,11 +1,8 @@
 <h1><%= @task.name %></h1>
 
-<p><strong>Due Date:</strong>
-  <%= @task.due_date.strftime("%A, %B %d, %Y") %></p>
-<p><strong>Repeat Frequency:</strong>
-  <%= @task.repeat_frequency %></p>
-<p><strong>Repeat Interval:</strong>
-  <%= @task.repeat_interval %></p>
+<p><strong>Due Date:</strong> <%= @task.due_date.strftime("%A, %B %d, %Y") %></p>
+<p><strong>Repeat Frequency:</strong> <%= @task.repeat_frequency %></p>
+<p><strong>Repeat Interval:</strong> <%= @task.repeat_interval %></p>
 
 <%= link_to "Complete Task", complete_task_path(@task), method: :patch %>
 <%= link_to "Edit Task", edit_task_path(@task) %>
