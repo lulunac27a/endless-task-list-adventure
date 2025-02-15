@@ -20,6 +20,7 @@ class TasksController < ApplicationController
 
   def edit
     @task = Task.find(params.fetch(:id))
+    render "tasks/form"
   end
 
   def complete
