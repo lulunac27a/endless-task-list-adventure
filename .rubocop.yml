@@ -8,8 +8,8 @@ inherit_gem: { rubocop-rails-omakase: rubocop.yml }
 #   Enabled: false
 # .rubocop.yml
 Layout/LineLength:
-  Max: 80
-  AutoCorrect: true
+    Max: 80
+    AutoCorrect: true
 # .rubocop.yml
 require:
-  - rubocop-erb
+    - rubocop-erb
