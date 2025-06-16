@@ -1,0 +1,7 @@
+# .htmlbeautifyrc.yaml
+tab_stops: 2
+indent_style: space
+erb: true
+ruby_embedded: true
+# Set the maximum line width
+max_line_length: 80
