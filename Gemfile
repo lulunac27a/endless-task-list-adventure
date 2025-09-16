@@ -62,6 +62,6 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem "rubocop-erb", "~> 0.6.0"
+gem "rubocop-erb", "~> 0.7.0"
 
 gem "erb-formatter", "~> 0.7.3"
